@@ -1,67 +1,115 @@
-/* definimos el root de nuestra web */
 *{
+  font-family: Arial;
   font-size: 14px;
-  font-family: Arial, Helvetica, sans-serif;
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+  font-weight: lighter
 }
 
-/* damos estilo a nuestros botones */
-button{
-  border: none;
-  height: 2rem;
-  border-radius: 0.5rem;
-}
-
-/* quitamos el borde a nuestra barra de busqueda */
 input{
   width: 100vw;
-  height: 2rem;
-  margin: 0 0.4rem;
   border: none;
+  height: 30px;
+  margin: 0 5px;
 }
-
-/* quitamos el focus que da por defecto el navegador a nuestros input */
+/* quitamos focus a nuestra barra de busqueda */
 input:focus{
-  outline: none;
+  outline:none;
 }
-
-/* quitamos el delineado a nuestras ancor*/
+/* quitamos la linea de abajo de los links */
 a:link{
   text-decoration: none;
 }
-
-/* cambiamos color de cuando ya visitamos ese link */
+/* logramos que no se vean como links */
 a:visited{
   color: black;
   text-decoration: none;
 }
-
-/* agregamos linea que tiene debajo los link de google */
+/* logramos que tenga la linea debajo solo cuando pasamos el mouse sobre el elemento */
 a:hover{
   text-decoration: underline;
 }
-/* clases */
+
+/* class */
 .container{
   width: 100vw;
-  max-width: 700px;
-  margin: 8rem auto;
+  max-width: 625px;
+  margin: 12rem auto;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .barra_busqueda{
-  margin-top: 1rem;
+  width: 90%;
   padding: 0.5rem 0.8rem ;
   display: flex;
-  justify-content: space-between;
   border-radius: 2rem;
-  border-color: lightslategray;
-  border: 0.1rem;
-  border-style: solid;
+  box-shadow: 0.3px 0.3px 2px rgb(180, 180, 180);;
 }
 
+.barra_busqueda:hover{
+  box-shadow: 0.3px 0.3px 10px rgb(212, 212, 212);
+}
 
+.menu{
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
 
+.menu-item{
+  margin: 20px 10px;
+  font-size: 13px;
+}
+
+.icon{
+  padding: 0px 15px;
+  display: grid;
+  align-content: center;
+  color: grey;
+}
+
+.micro{
+  cursor: pointer;
+}
+
+.opciones_busqueda{
+  margin-top: 15px;
+  width: 270px;
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.opciones_busqueda-boton{
+  background-color: #f8f9fa;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  height: 36px;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.opciones_busqueda-boton:hover{
+  border: 1px solid rgb(212, 212, 212);
+}
+
+.img_perfil{
+  margin: 12px 15px;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 20px;
+  border: 3px solid transparent;
+  cursor: pointer;
+}
+
+.img_perfil:hover{
+  border: 3px solid rgb(200, 200, 200);
+}
+
+.font{
+  margin-left: 1rem;
+  margin-top: 1rem;
+  margin-right: 0px;
+  font-size: 30px;
+  cursor: pointer;
+}

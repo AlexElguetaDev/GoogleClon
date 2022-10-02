@@ -4,32 +4,48 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/GoogleClon/css/reset.css">
-  <link rel="stylesheet" href="/GoogleClon/css/style.css">
-  <title>Clon Google</title>
+  <link rel="stylesheet" href="/css/reset.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="/js/main.js"></script>
+  <script src="https://kit.fontawesome.com/92f4fa02d6.js" crossorigin="anonymous"></script>
+  <title>Clongoogle</title>
 </head>
 <body>
   <!-- nuestro header -->
-  <header>
-    <a href="#">Clongmail</a>
-    <a href="#">Imagenes</a>
-    <span>icon</span>
-    <img src="/GoogleClon/img/profile.png" alt="profile" height="30px">
+  <header class="menu"> <!-- creamos un encabezado -->
+    <a onClick="alert('Somos solo un clon')" href="#" class="menu-item">Gmail</a> <!-- un etiqueta anchor como link hacia gmail  -->
+    <a onClick="alert('Muchas gracias por ver mi clon')" href="#" class="menu-item">Imágenes</a>
+    <div class="apps">
+      <span>
+        <i onClick="alert('No encontre el icon original :[')" class="fa-solid fa-spinner font"></i>
+      </span>
+    </div> <!-- un span por que es magnifico para poner un icono debido a que su caja es en linea -->
+    <img onClick="alert('Holi')" class="img_perfil" src="/img/profile.png" alt="" width="30px"> <!-- una etiqueta img para agregar la imagen de perfil -->
   </header>
   <!-- nuestro main -->
-  <main>
-    <div class="container">
-      <img src="/GoogleClon/img/google.png" alt="logo" height="200px">
-      <div class="barra_busqueda">
-        <span>icon1</span>
-        <input type="text">
-        <span>icon2</span>
+  <main> <!-- es nuestro contenido principal del body como el logo de google y nuestro input -->
+    <div class="container"> <!-- agregamos un div par agrupar nuestro elementos del main -->
+      <img src="/img/google.png" alt="" width="272px"> <!-- agregamos el logotipo de google -->
+      <div class="barra_busqueda"> <!-- otro div para agrupar nuestra barra de busqueda -->
+        <div class="icon">
+          <span>
+            <label for="busqueda"><i class="fa-solid fa-magnifying-glass"></i></label> <!-- ico de lupa -->
+          </span> 
+        </div> 
+        <input id="busqueda" type="text">
+        <div class="icon micro">
+          <span>
+            <img onClick="alert('Yo tampoco funciono!!')" src="/img/pngwing.com.png" alt="" width="15px"> <!-- ico de micro -->
+          </span> 
+        </div> 
       </div>
-      <div>
-        <button>Buscar con Clongoogle</button>
-        <button>Voy a tener suerte</button>
+      <div class="opciones_busqueda"> <!-- div para agrupar nuestros botones -->
+        <button onClick="alert('No funciona como google')" class="opciones_busqueda-boton">Buscar con Google</button>
+        <button onClick="alert('No mucha suerte')" class="opciones_busqueda-boton">Voy a tendre suerte</button>
       </div>
-      <p>Ofrecido por Clongoogle en : <a href="#">Español</a></p>
+      <!-- <footer>
+        <p>Ofrecido por google en : <a href="">Español</a></p>
+      </footer> -->
     </div>
   </main>
 </body>
