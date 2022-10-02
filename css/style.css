@@ -57,6 +57,7 @@ a:hover{
 }
 
 .menu-item{
+  color: #3c4043;
   margin: 20px 10px;
   font-size: 13px;
 }
@@ -82,6 +83,7 @@ a:hover{
 
 .opciones_busqueda-boton{
   background-color: #f8f9fa;
+  color: #3c4043;
   border: 1px solid transparent;
   border-radius: 4px;
   height: 36px;
@@ -97,7 +99,7 @@ a:hover{
   margin: 12px 15px;
   width: 2rem;
   height: 2rem;
-  border-radius: 20px;
+  border-radius: 2rem;
   border: 3px solid transparent;
   cursor: pointer;
 }
